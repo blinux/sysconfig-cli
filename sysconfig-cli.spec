@@ -1,5 +1,5 @@
 #-
-# Copyright 2013-2014 Emmanuel Vadot <elbarto@bocal.org>
+# Copyright 2014 Emmanuel Vadot <elbarto@bocal.org>
 # All rights reserved
 #
 # Redistribution and use in source and binary forms, with or without

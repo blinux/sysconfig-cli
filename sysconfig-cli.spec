@@ -25,7 +25,7 @@
 
 Name:		sysconfig-cli
 Version:        0.1
-Release:        0
+Release:        1
 License:        BSD-2-Clause
 Summary:	Sysconfig command line editor
 BuildArch:      noarch
@@ -50,8 +50,11 @@ cp sysconfig-cli %{buildroot}%{_sbindir}
 
 
 %files
-%{_sbindir}/sysconfig-cli
+%attr(755,root,root) %{_sbindir}/sysconfig-cli
 
 %changelog
+* Tue Aug 05 2014 Emmanuel Vadot <elbarto@bocal.org> - 1.0-1
+- Fix permission
+
 * Tue Aug 05 2014 Emmanuel Vadot <elbarto@bocal.org> - 1.0-0
 - Package creation

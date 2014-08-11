@@ -25,29 +25,29 @@
 
 Name:		sysconfig-cli
 Version:        0.1
-Release:        1
-License:        BSD-2-Clause
+Release:        0
 Summary:	Sysconfig command line editor
-BuildArch:      noarch
-Source0:        %{name}-%{version}.tgz
-Vendor:		Bocal
-Url:            http://www.bocal.org
+License:        BSD-2-Clause
 Group:          System Environment/Base
+
+BuildArch:      noarch
+Source0:	sysconfig-cli
+
 Packager:       Emmanuel Vadot <elbarto@bocal.org>
+Url:            http://www.blinux.fr
+Vendor:		Blinux
 
 %description
 Sysconfig command line utility for scripts
 
 %prep
-%setup
 
 %build
 
 %install
 rm -fr %{buildroot}
 mkdir -p %{buildroot}%{_sbindir}/
-cp sysconfig-cli %{buildroot}%{_sbindir}
-
+install -D -m 755 ${SOURCE0} %{buildroot}%{_sbindir}
 
 %files
 %attr(755,root,root) %{_sbindir}/sysconfig-cli

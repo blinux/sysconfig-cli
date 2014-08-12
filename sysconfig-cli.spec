@@ -47,7 +47,7 @@ Sysconfig command line utility for scripts
 %install
 rm -fr %{buildroot}
 mkdir -p %{buildroot}%{_sbindir}/
-install -D -m 755 ${SOURCE0} %{buildroot}%{_sbindir}
+install -D -m 755 %{SOURCE0} %{buildroot}%{_sbindir}
 
 %files
 %attr(755,root,root) %{_sbindir}/sysconfig-cli

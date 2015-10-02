@@ -56,7 +56,7 @@ section_exists() {
 }
 
 value_set() {
-    sed -i.bak "s/\(${KEY}\)=.*/\1=${VALUE}/" /etc/sysconfig/${SECTION}
+    sed -i.bak "s/\(^${KEY}\)=.*/\1=${VALUE}/" /etc/sysconfig/${SECTION}
 }
 
 if [ $# -ne 3 ]; then

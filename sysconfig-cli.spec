@@ -24,7 +24,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 Name:		sysconfig-cli
-Version:        0.1
+Version:        0.2
 Release:        0
 Summary:	Sysconfig command line editor
 License:        BSD-2-Clause
